@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import styles from './styles/app.module.css';
+import Events from './Events/createEvents';
 
 function App() {
 
@@ -20,11 +20,9 @@ function App() {
 
         </div>
       </section>
-      <section>
-        <div className={styles.Calendar}>
-          <button className={styles.Event} style={eventStyle(200)}> Wake up </button>
-          <button className={styles.Event} style={eventStyle(400, "#ff7a7a")} > Shopping </button>
-          <button className={styles.Event} style={eventStyle(400, "#83c77b")} > Cleaning </button>
+      <section className={styles.CalendarBarSection}>
+        <div className={styles.CalendarBar}>
+          <Events />
         </div>
       </section>
     </div >

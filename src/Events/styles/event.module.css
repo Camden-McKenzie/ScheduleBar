@@ -1,0 +1,25 @@
+.Event {
+  height: 100%;
+  border-style: none;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  font-weight: 600;
+
+  /* Shadow on end of event */
+  -webkit-box-shadow: inset -6px 0px 6px -6px black;
+	   -moz-box-shadow: inset -6px 0px 6px -6px black;
+	        box-shadow: inset -6px 0px 6px -6px black;
+}
+
+.Event:first-child {
+  /* Round corners to match calendar */
+  border-radius: 100px 0px 0px 100px;
+}
+
+.Event:last-child {
+  /* Remove shadow */
+  -webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+}
+
