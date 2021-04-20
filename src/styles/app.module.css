@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.AppLogo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .AppLogo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.AppHeader {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.AppLink {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Calendar {
+  display: flex;
+  background-color: white;
+  margin: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+  justify-content: flex-start;
+}
+
+.Event {
+  height: 100%;
+  border-style: none;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  font-weight: 600;
+}
+
+.Event:first-of-type {
+  border-radius: 100px 0px 0px 100px;
+}
