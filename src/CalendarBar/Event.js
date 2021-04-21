@@ -9,9 +9,9 @@ const DEFAULT_WIDTH = 20;
  * @param   {string}          message Message displayed on the event
  * @param   {int}             width Width (in pixels)
  * @param   {color}           color Background color
- * @return  {react.Component} Event to be displayed within a CalenderBar
+ * @return  {react.Component} Event to be displayed within a CalendarBar
  */
-export default function Event({ message, width = DEFAULT_WIDTH, color = DEFAULT_COLOR }) {
+function Event({ message, width = DEFAULT_WIDTH, color = DEFAULT_COLOR }) {
 
   const eventStyle = () => ({
     width: `${width}%`,
@@ -23,3 +23,5 @@ export default function Event({ message, width = DEFAULT_WIDTH, color = DEFAULT_
     <button className={styles.Event} style={eventStyle()}> {message} </button>
   );
 }
+
+export default Event;

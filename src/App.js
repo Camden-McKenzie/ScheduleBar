@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import EventData from "./CalendarBar/eventData"
 
 function App() {
-
+  
   const [eventList, setEventList] = useState([
     new EventData("Shopping", 10, "blue"),
     new EventData("Cleaning", 20, "green"),
