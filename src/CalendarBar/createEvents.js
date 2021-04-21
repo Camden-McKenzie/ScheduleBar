@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Data from './getEventData'
-import Event from './event'
+import Data from './eventList'
+import Event from './Event'
 
 
 export default class Events extends React.Component {
